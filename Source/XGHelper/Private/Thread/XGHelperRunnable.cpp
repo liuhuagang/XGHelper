@@ -6,12 +6,13 @@
 
 FCriticalSection FXGHelperRunnable::CriticalSection;
 bool FXGHelperRunnable::Init()
-{
+{	//这里是HelperRunnable线程 不能打印日志
 	return true;
 }
 
 uint32 FXGHelperRunnable::Run()
 {
+	//这里是HelperRunnable线程 不能打印日志
 	while (true)
 	{
 
@@ -36,12 +37,13 @@ uint32 FXGHelperRunnable::Run()
 
 void FXGHelperRunnable::Exit()
 {
-
+	//这里是HelperRunnable线程 不能打印日志
 }
 
 void FXGHelperRunnable::Stop()
 {
-	UE_LOG(LogTemp, Display, TEXT("FConsumeSoundRunnable[%s] begin to stop"), *MyThreadName);
+	//这里不是HelperRunnable线程,可以是主线程也可以是其他线程
+	UE_LOG(LogTemp, Display, TEXT("[%s]FXGHelperRunnable[%s] begin to stop"), *FString(__FUNCTION__), *XGThreadName);
 	FScopeLock Lock(&CriticalSection);
 	bRunning = false;
 

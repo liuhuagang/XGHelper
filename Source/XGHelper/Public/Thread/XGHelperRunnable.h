@@ -8,7 +8,7 @@ class FXGHelperRunnable :public FRunnable
 {
 public:
 	FXGHelperRunnable(FString ThreadName) 
-	:MyThreadName(ThreadName)
+	:XGThreadName(ThreadName)
 	{
 
 	}
@@ -18,7 +18,7 @@ public:
 	virtual void Exit() override;
 	virtual void Stop() override;
 
-	FString MyThreadName;
+	FString XGThreadName;
 
 
 

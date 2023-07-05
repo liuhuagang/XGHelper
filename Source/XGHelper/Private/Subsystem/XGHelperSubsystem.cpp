@@ -34,4 +34,6 @@ TStatId UXGHelperSubsystem::GetStatId() const
  RETURN_QUICK_DECLARE_CYCLE_STAT(UXGHelperSubsystem, STATGROUP_Tickables);
 }
 
+
+
 #pragma endregion InitSubsystem

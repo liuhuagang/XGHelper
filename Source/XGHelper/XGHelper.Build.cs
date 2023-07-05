@@ -21,6 +21,18 @@ public class XGHelper : ModuleRules
                 "XGHelper/Public/Subsystem",
                 "XGHelper/Public/Log",
                 "XGHelper/Public/Thread",
+                "XGHelper/Public/UMG",
+                "XGHelper/Public/Enum",
+                "XGHelper/Public/Object",
+                "XGHelper/Public/Struct",
+                "XGHelper/Public/TMap",
+                "XGHelper/Public/TArray",
+                "XGHelper/Public/Delegate",
+				"XGHelper/Public/Platform",
+                "XGHelper/Public/StreamableManager",
+                "XGHelper/Public/CameraPixel"
+
+
             }
 			);
 			
@@ -41,8 +53,12 @@ public class XGHelper : ModuleRules
 				"Engine",
 				"Slate",
 				"SlateCore",
+				"UMG",
+				"Slate",
+				"SlateCore",
+				"DesktopPlatform",
 
-			}
+            }
 			);
 		
 		
