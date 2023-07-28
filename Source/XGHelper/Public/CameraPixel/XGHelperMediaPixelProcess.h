@@ -4,17 +4,17 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "XGMediaPixelProcess.generated.h"
+#include "XGHelperMediaPixelProcess.generated.h"
 
 class UTextureRenderTarget2D;
 UCLASS()
-class AXGMediaPixelProcess : public AActor
+class AXGHelperMediaPixelProcess : public AActor
 {
 	GENERATED_BODY()
 
 public:
 
-	AXGMediaPixelProcess();
+	AXGHelperMediaPixelProcess();
 
 
 public:

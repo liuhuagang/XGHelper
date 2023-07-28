@@ -30,7 +30,9 @@ public class XGHelper : ModuleRules
                 "XGHelper/Public/Delegate",
 				"XGHelper/Public/Platform",
                 "XGHelper/Public/StreamableManager",
-                "XGHelper/Public/CameraPixel"
+                "XGHelper/Public/CameraPixel",
+                "XGHelper/Public/Tag",
+                "XGHelper/Public/AsyncAction"
 
 
             }
@@ -57,7 +59,7 @@ public class XGHelper : ModuleRules
 				"Slate",
 				"SlateCore",
 				"DesktopPlatform",
-
+                "GameplayTags"
             }
 			);
 		

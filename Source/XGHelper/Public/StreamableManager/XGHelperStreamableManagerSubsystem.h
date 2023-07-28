@@ -5,7 +5,7 @@
 #include "CoreMinimal.h"
 #include "Subsystems/GameInstanceSubsystem.h"
 #include "Engine/StreamableManager.h"
-#include "XGStreamableManagerSubsystem.generated.h"
+#include "XGHelperStreamableManagerSubsystem.generated.h"
 
 
 
@@ -20,7 +20,7 @@
  *
  */
 UCLASS()
-class XGHELPER_API UXGStreamableManagerSubsystem : public UGameInstanceSubsystem, public FTickableGameObject
+class XGHELPER_API UXGHelperStreamableManagerSubsystem : public UGameInstanceSubsystem, public FTickableGameObject
 {
 
 	GENERATED_BODY()

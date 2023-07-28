@@ -1,18 +1,18 @@
 // Copyright 2023 Xiao Gang. All Rights Reserved.
 
 
-#include "XGMediaPixelProcess.h"
+#include "XGHelperMediaPixelProcess.h"
 #include "Engine/TextureRenderTarget2D.h"
 #include "LogXGHelper.h"
 
-AXGMediaPixelProcess::AXGMediaPixelProcess()
+AXGHelperMediaPixelProcess::AXGHelperMediaPixelProcess()
 {
 
 	PrimaryActorTick.bCanEverTick = false;
 
 }
 
-bool AXGMediaPixelProcess::ProcessData(UTextureRenderTarget2D* TextureRenderTarget2D)
+bool AXGHelperMediaPixelProcess::ProcessData(UTextureRenderTarget2D* TextureRenderTarget2D)
 {
 	UE_LOG(LogXGHelper,Display,TEXT("%s"),*FString(__FUNCTION__));
 
@@ -61,14 +61,14 @@ bool AXGMediaPixelProcess::ProcessData(UTextureRenderTarget2D* TextureRenderTarg
 }
 
 
-void AXGMediaPixelProcess::BeginPlay()
+void AXGHelperMediaPixelProcess::BeginPlay()
 {
 	Super::BeginPlay();
 
 }
 
 
-void AXGMediaPixelProcess::Tick(float DeltaTime)
+void AXGHelperMediaPixelProcess::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
