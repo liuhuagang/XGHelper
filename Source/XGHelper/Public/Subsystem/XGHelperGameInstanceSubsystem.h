@@ -4,13 +4,13 @@
 
 #include "CoreMinimal.h"
 #include "Subsystems/GameInstanceSubsystem.h"
-#include "XGHelperSubsystem.generated.h"
+#include "XGHelperGameInstanceSubsystem.generated.h"
 
 /**
  *
  */
 UCLASS()
-class XGHELPER_API UXGHelperSubsystem : public UGameInstanceSubsystem, public FTickableGameObject
+class XGHELPER_API UXGHelperGameInstanceSubsystem : public UGameInstanceSubsystem, public FTickableGameObject
 {
 
 	GENERATED_BODY()
@@ -30,10 +30,5 @@ public:
 	virtual TStatId GetStatId() const override;
 
 #pragma endregion InitSubsystem
-
-
-
-
-
 
 };

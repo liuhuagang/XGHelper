@@ -1,37 +1,37 @@
 // Copyright 2023 Xiao Gang. All Rights Reserved.
-#include "XGHelperSubsystem.h"
+#include "XGHelperGameInstanceSubsystem.h"
 
 
 #pragma region InitSubsystem
-bool UXGHelperSubsystem::ShouldCreateSubsystem(UObject* Outer) const
+bool UXGHelperGameInstanceSubsystem::ShouldCreateSubsystem(UObject* Outer) const
 {
 	return true;
 }
 
-void UXGHelperSubsystem::Initialize(FSubsystemCollectionBase& Collection)
+void UXGHelperGameInstanceSubsystem::Initialize(FSubsystemCollectionBase& Collection)
 {
 	Super::Initialize(Collection);
 
 }
 
-void UXGHelperSubsystem::Deinitialize()
+void UXGHelperGameInstanceSubsystem::Deinitialize()
 {
 	Super::Deinitialize();
 }
 
-void UXGHelperSubsystem::Tick(float DeltaTime)
+void UXGHelperGameInstanceSubsystem::Tick(float DeltaTime)
 {
 
 }
 
-bool UXGHelperSubsystem::IsTickable() const
+bool UXGHelperGameInstanceSubsystem::IsTickable() const
 {
-	 return !IsTemplate(); 
+	return !IsTemplate();
 }
 
-TStatId UXGHelperSubsystem::GetStatId() const
+TStatId UXGHelperGameInstanceSubsystem::GetStatId() const
 {
- RETURN_QUICK_DECLARE_CYCLE_STAT(UXGHelperSubsystem, STATGROUP_Tickables);
+	RETURN_QUICK_DECLARE_CYCLE_STAT(UXGHelperGameInstanceSubsystem, STATGROUP_Tickables);
 }
 
 
